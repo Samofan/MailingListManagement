@@ -61,10 +61,12 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MailingListManagement.Frontend:build:production"
+              "buildTarget": "MailingListManagement.Frontend:build:production",
+              "proxyConfig": "proxy.conf.js"
             },
             "development": {
-              "buildTarget": "MailingListManagement.Frontend:build:development"
+              "buildTarget": "MailingListManagement.Frontend:build:development",
+              "proxyConfig": "proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"

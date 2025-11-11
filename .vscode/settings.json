@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always",
+        "source.sortImports": "always",
+        "source.removeUnusedImports": "always"
+    },
+    "editor.defaultFormatter": "ms-dotnettools.csdevkit"
+}
