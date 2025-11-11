@@ -5,5 +5,8 @@
         "source.sortImports": "always",
         "source.removeUnusedImports": "always"
     },
-    "editor.defaultFormatter": "ms-dotnettools.csdevkit"
+    "editor.defaultFormatter": "ms-dotnettools.csdevkit",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

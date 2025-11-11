@@ -1,4 +1,4 @@
-import { inject } from '@angular/core';
+import { computed, inject } from '@angular/core';
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { catchError, finalize, of, tap } from 'rxjs';
 import { MailingList } from "../models/mailing-list.model";
@@ -15,6 +15,7 @@ const initialState: MailingListState = {
 };
 
 export const MailingListStore = signalStore(
+    { providedIn: 'root' },
     withState(initialState),
     withMethods((store, mailingListService = inject(MailingListService)) => ({
         loadAll(): void {
@@ -27,6 +28,9 @@ export const MailingListStore = signalStore(
                 }),
                 finalize(() => patchState(store, { isLoading: false }))
             ).subscribe();
-        }
+        },
+        selectById: (id: string | number) => computed(() => {
+            return store.mailingLists().find(list => list.id === id);
+        })
     }))
 );

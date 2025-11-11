@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { MailingListStore } from './stores/mailing-list.store';
+import { MailingListStore } from '../stores/mailing-list.store';
 
 @Component({
   selector: 'app-mailing-list',

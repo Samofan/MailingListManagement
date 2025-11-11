@@ -1,0 +1,9 @@
+@if (!store.isLoading()) {
+    <ul>
+        @for (mailingList of store.mailingLists(); track mailingList.id) {
+            <li>
+                <a href="/edit/{{ mailingList.id }}">{{ mailingList.name }}</a>
+            </li>
+        }
+    </ul>
+}

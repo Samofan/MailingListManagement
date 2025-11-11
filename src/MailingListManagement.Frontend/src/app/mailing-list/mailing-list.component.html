@@ -1,7 +1,0 @@
-@if (!store.isLoading()) {
-    <ul>
-        @for (mailingList of store.mailingLists(); track $index) {
-            <li><a href="/mailingList/{{ mailingList.id }}">{{ mailingList.name }}</a></li>
-        }
-    </ul>
-}
