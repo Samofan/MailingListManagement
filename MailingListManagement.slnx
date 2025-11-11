@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/MailingListManagement.ApiService/MailingListManagement.ApiService.csproj" />
+  <Project Path="src/Aspire/MailingListManagement.AppHost/MailingListManagement.AppHost.csproj" />
+  <Project Path="src/Aspire/MailingListManagement.ServiceDefaults/MailingListManagement.ServiceDefaults.csproj" />
+</Solution>
